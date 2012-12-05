@@ -6,8 +6,8 @@ class MyEditorScript
 {
     static string[] SCENES = FindEnabledEditorScenes();
 
-    static string APP_NAME = "YourProject";
-    static string TARGET_DIR = "target";
+    static string APP_NAME = "JenkinsTest";
+    static string TARGET_DIR = "C:/Users/Development 2/Desktop/";
 
     [MenuItem("Custom/CI/Build Windows")]
     static void PerformWindowsBuild()
