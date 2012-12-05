@@ -15,7 +15,12 @@ class MyEditorScript
         string target_dir = APP_NAME + ".app";
         GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.StandaloneWindows, BuildOptions.None);
     }
-
+    [MenuItem("Custom/CI/Build Android")]
+    static void PerformAndroidBuild()
+    {
+        string target_dir = APP_NAME + ".apk";
+        GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android, BuildOptions.None);
+    }
     private static string[] FindEnabledEditorScenes()
     {
         List<string> EditorScenes = new List<string>();
